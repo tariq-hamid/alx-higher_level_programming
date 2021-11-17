@@ -8,4 +8,4 @@ def print_last_digit(number):
             pass
         else:
             last_digit = 10 - (number % 10)
-    print("{}".format(last_digit))
+    print("{:1}".format(last_digit))
