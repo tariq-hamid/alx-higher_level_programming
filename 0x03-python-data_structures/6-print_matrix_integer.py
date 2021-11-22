@@ -8,6 +8,11 @@ def print_matrix_integer(matrix=[[]]):
     Returns:
         Nothing
     """
+    if not len(matrix[0]) and len(matrix) == 1:
+        print("")
     for row in matrix:
-        row_str = str(row).replace("[", "").replace("]", "").replace(",", "")
-        print(row_str)
+        for element in row:
+            if row.index(element) == len(row) - 1:
+                print("{:d}".format(element))
+                continue
+            print("{:d}".format(element), end=" ")
