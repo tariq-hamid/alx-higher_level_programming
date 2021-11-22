@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    """Function that replaces an element in a list at a 
+    """Function that replaces an element in a list at a
     specific position without modifying the original list
 
     Args:
@@ -11,7 +11,7 @@ def new_in_list(my_list, idx, element):
     Returns:
         Retrieved element if exists, None otherwise
     """
-    cp_list = my_list
+    cp_list = my_list.copy()
     if idx < len(cp_list) and idx >= 0:
         cp_list[idx] = element
         return cp_list
