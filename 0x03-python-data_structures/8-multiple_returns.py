@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
-    """Function that adds 2 tuples.
+def multiple_returns(sentence):
+    """Function that returns a tuple with the length 
+    of a string and its first character.
 
     Args:
-        tuple_a: first tuple
-        tuple_b: second tuple
+        sentence: a string
 
     Returns:
-        Nothing
+        A tuple
     """
+    if len(sentence) == 0:
+        return 0, "None"
+    return len(sentence), sentence[0]
