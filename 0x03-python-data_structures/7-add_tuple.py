@@ -7,7 +7,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_b: second tuple
 
     Returns:
-        Nothing
+        Tuple with 2 integers
     """
     list_a = list(tuple_a)
     list_b = list(tuple_b)
