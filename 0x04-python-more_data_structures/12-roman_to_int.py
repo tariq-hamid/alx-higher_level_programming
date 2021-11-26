@@ -9,14 +9,14 @@ def roman_to_int(roman_string):
         Integer if roman number is valid, 0 otherwise
     """
     number = 0
-    if isinstance(roman_string, str) and roman_string != None:
+    if isinstance(roman_string, str) and roman_string not None:
         for char in roman_string:
             if char == "I":
                 number += 1
             elif char == "V":
                 number += 5
             elif char == "X":
-                number += 10            
+                number += 10
             elif char == "L":
                 number += 50
             elif char == "C":
