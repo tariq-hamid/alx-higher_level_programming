@@ -8,21 +8,17 @@ def roman_to_int(roman_string):
     Returns:
         Integer if roman number is valid, 0 otherwise
     """
-    number = 0
-    if isinstance(roman_string, str) and roman_string not None:
-        for char in roman_string:
-            if char == "I":
-                number += 1
-            elif char == "V":
-                number += 5
-            elif char == "X":
-                number += 10
-            elif char == "L":
-                number += 50
-            elif char == "C":
-                number += 100
-            elif char == "D":
-                number += 500
-            elif char == "M":
-                number += 1000
-    return number
+    if not isinstance(roman_string, str) or not roman_string:
+        return 0
+    roman_int_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+                     'C': 100, 'D': 500, 'M': 1000}
+    i = 0
+    result = 0
+    while i < len(roman_string):
+        if i + 1 < len(roman_string) and roman_string[i:i+2] in roman_int_map:
+            result += roman_int_map[roman_string[i:i+2]]
+            i += 2
+        else:
+            result += roman_int_map[roman_string[i]]
+            i += 1
+    return result
