@@ -10,7 +10,9 @@ def complex_delete(a_dictionary, value):
     Returns:
         edited dict
     """
-    while value in list(a_dictionary.values()):
-        del a_dictionary[list(
-            a_dictionary.keys()
-        )[list(a_dictionary.values()).index(value)]]
+    new_dict = a_dictionary.copy()
+    while value in list(new_dict.values()):
+        del new_dict[list(
+            new_dict.keys()
+        )[list(new_dict.values()).index(value)]]
+    return new_dict
