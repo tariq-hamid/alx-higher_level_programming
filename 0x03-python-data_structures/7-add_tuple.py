@@ -15,7 +15,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         list_a.append(0)
     elif len(list_a) == 0:
         list_a = [0, 0]
-    elif len(list_b) == 1:
+    if len(list_b) == 1:
         list_b.append(0)
     elif len(list_b) == 0:
         list_b = [0, 0]
