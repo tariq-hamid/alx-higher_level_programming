@@ -15,4 +15,5 @@ def complex_delete(a_dictionary, value):
         del new_dict[list(
             new_dict.keys()
         )[list(new_dict.values()).index(value)]]
+    a_dictionary = new_dict.copy()
     return new_dict
