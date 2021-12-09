@@ -10,6 +10,7 @@ def safe_print_division(a, b):
     Returns:
         Returns the value of the division, otherwise: None
     """
+    result = None
     try:
         result = a / b
     except ZeroDivisionError:
