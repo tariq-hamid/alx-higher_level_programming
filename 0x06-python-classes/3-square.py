@@ -28,4 +28,4 @@ class Square:
         Returns:
             Area of a square
         """
-        return pow(size, 2)
+        return pow(self.__size, 2)
