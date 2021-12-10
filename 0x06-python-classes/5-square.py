@@ -56,13 +56,13 @@ class Square:
             Area of a square
         """
         return pow(self.__size, 2)
-    
+
     def my_print(self):
         """Method that prints in stdout
         the square with the character #
-        
+
         Args:
-        
+
         Returns:
             Nth
         """
