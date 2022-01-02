@@ -10,6 +10,7 @@ class Square:
 
         Args:
             size: size of the square
+            position: position of the square
 
         Returns:
             Nth
