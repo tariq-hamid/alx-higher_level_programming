@@ -39,7 +39,7 @@ class Square:
             for i in range(self.__size):
                 square_str += " " * self.__position[0]
                 square_str += "#" * self.__size + '\n'
-        return square_str
+        return square_str.rstrip()
 
     @property
     def size(self):
