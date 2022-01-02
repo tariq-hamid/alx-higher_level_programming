@@ -16,9 +16,9 @@ class Square:
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        elif not (isinstance(position, tuple) and
+        if not (isinstance(position, tuple) and
                 len(position) == 2 and
                 position[0] >= 0 and position[1] >= 0):
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -90,7 +90,7 @@ class Square:
         return pow(self.__size, 2)
 
     def my_print(self):
-        """Method that prints in stdout
+        """Method that prints to stdout
         the square with the character #
 
         Args:
@@ -99,7 +99,7 @@ class Square:
             Nth
         """
         if self.__size == 0:
-            print('')
+            print()
         else:
             for i in range(self.__position[1]):
                 print('')
