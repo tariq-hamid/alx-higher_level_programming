@@ -9,6 +9,8 @@ def add_integer(a, b=98):
     Returns:
         addition of a and b, an integer
     """
+    if a in ['nan', 'Nan', 'NaN', 'naN'] or b in ['nan', 'Nan', 'NaN', 'naN']:
+        raise TabError("cannot convert float NaN to integer")
     if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
     if type(b) not in [int, float]:
