@@ -34,10 +34,10 @@ class Square:
         if self.__size == 0:
             square_str = ""
         else:
-            for i in range(self.__position[1]):
-                square_str += ' \n'
+            # for i in range(self.__position[1]):
+                # square_str += ' \n'
             for i in range(self.__size):
-                # square_str += " " * self.__position[0]
+                square_str += " " * self.__position[0]
                 square_str += "#" * self.__size + '\n'
         return square_str.rstrip()
 
