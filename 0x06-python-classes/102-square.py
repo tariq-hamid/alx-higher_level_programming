@@ -18,14 +18,7 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        if not (isinstance(position, tuple) and
-                len(position) == 2 and
-                isinstance(position[0], int) and
-                isinstance(position[1], int) and
-                position[0] >= 0 and position[1] >= 0):
-            raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
-        self.__position = position
 
     @property
     def size(self):
@@ -65,19 +58,19 @@ class Square:
         return pow(self.__size, 2)
 
     def __lt__(self, s2):
-        return self.area < s2.area
+        return self.area() < s2.area()
 
     def __gt__(self, s2):
-        return self.area > s2.area
+        return self.area() > s2.area()
 
     def __eq__(self, s2):
-        return self.area == s2.area
+        return self.area() == s2.area()
 
     def __le__(self, s2):
-        return self.area <= s2.area
+        return self.area() <= s2.area()
 
     def __ge__(self, s2):
-        return self.area >= s2.area
+        return self.area() >= s2.area()
 
     def __ne__(self, s2):
-        return self.area != s2.area
+        return self.area() != s2.area()
