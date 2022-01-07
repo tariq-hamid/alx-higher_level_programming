@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Adder function for testing """
+
+
 def add_integer(a, b=98):
     """functions that adds 2 integers
 
