@@ -18,8 +18,8 @@ def text_indentation(text):
     line = ""
     for c in text:
         line += c
+        strings_.append(line.strip())
         if c in [".", "?", ":"]:
-            strings_.append(line.strip())
             line = ""
     for line_ in strings_:
         print("{}\n".format(line_))
