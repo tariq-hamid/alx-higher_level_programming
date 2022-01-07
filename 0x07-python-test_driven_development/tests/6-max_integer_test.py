@@ -13,6 +13,7 @@ class TestMaxInteger(unittest.TestCase):
         """ test case for proper input """
         self.assertEqual(max_integer([1, 2, 3]), 3)
         self.assertEqual(max_integer([3, 2, 1]), 3)
+        self.assertEqual(max_integer([1]), 1)
         self.assertEqual(max_integer([1.1, 1.3, 1.2]), 1.3)
         self.assertEqual(max_integer(['c', 'b', 'a']), 'c')
         self.assertEqual(max_integer([]), None)
