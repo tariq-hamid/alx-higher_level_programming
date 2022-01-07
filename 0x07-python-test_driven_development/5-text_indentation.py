@@ -5,10 +5,10 @@
 def text_indentation(text):
     """Function that prints a text with 2
     new lines after each of these characters: ., ? and :
-    
+
     Args:
         text: string to be printed
-    
+
     Returns:
         nth
     """
@@ -17,7 +17,7 @@ def text_indentation(text):
     text = text.strip()
     pre = text[0]
     endings = ['.', '?', ':']
-    
+
     for c in text:
         if c == ' ' and pre in endings:
             continue
@@ -25,5 +25,3 @@ def text_indentation(text):
         print(c, end='')
         if c in endings:
             print("\n")
-    
-    
