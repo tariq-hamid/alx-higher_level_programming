@@ -14,13 +14,16 @@ def text_indentation(text):
     """
     if not (isinstance(text, str)):
         raise TypeError("text must be a string")
-    strings_ = []
-    line = ""
+    text = text.strip()
+    pre = text[0]
+    endings = ['.', '?', ':']
+    
     for c in text:
-        line += c
-        strings_.append(line.strip())
-        if c in [".", "?", ":"]:
-            line = ""
-    for line_ in strings_:
-        print("{}\n".format(line_))
+        if c == ' ' and pre in endings:
+            continue
+        pre = c
+        print(c, end='')
+        if c in endings:
+        print("\n")
+    
     
