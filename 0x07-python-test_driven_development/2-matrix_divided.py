@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module containing a function that does division on matrix """
+
+
 def matrix_divided(matrix, div):
     """functions that divides all elements of a matrix
 
@@ -13,8 +16,7 @@ def matrix_divided(matrix, div):
         for i in row:
             if not (type(i) in [int, float]):
                 raise TypeError("\
-matrix must be a matrix (list of lists) of integers/floats\
-                ")
+matrix must be a matrix (list of lists) of integers/floats")
     n = len(matrix[0])
     for row in matrix:
         if len(row) != n:
