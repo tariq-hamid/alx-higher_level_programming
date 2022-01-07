@@ -24,6 +24,6 @@ def text_indentation(text):
         pre = c
         print(c, end='')
         if c in endings:
-        print("\n")
+            print("\n")
     
     
