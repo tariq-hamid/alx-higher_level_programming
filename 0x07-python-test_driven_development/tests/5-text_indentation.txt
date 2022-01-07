@@ -43,4 +43,4 @@ Only one argument (text) must be provided:
 	>>> text_indentation("text1", "text2")
 	Traceback (most recent call last):
 			...
-	TypeError: text_indentation() takes 1 positional argument but 2 were given	
+	TypeError: text_indentation() takes 1 positional argument but 2 were given
