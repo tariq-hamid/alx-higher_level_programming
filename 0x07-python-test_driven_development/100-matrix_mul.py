@@ -13,9 +13,9 @@ def matrix_mul(m_a, m_b):
         multiplication of two m_a and m_b
     """
     if type(m_a) != list:
-        raise TypeError("m_a must be a list ")
+        raise TypeError("m_a must be a list")
     if type(m_b) != list:
-        raise TypeError("m_b must be a list ")
+        raise TypeError("m_b must be a list")
     for element in m_a:
         if type(element) != list:
             raise TypeError("m_a must be a list of lists")
