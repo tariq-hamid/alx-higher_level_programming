@@ -20,7 +20,7 @@ Can be used as:
 
 m_a and m_b must be lists:
 
-	>>> print(lazy_matrix_mul(1, [[1,2,3]]))
+	>>> print(lazy_matrix_mul("yes", [[1,2,3]]))
 	Traceback (most recent call last):
 			...
 	ValueError: matmul: Input operand 0 does not have enough dimensions (has 0, gufunc core with signature (n?,k),(k,m?)->(n?,m?) requires 1)
